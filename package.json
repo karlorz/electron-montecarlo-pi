@@ -1,5 +1,5 @@
 {
-  "name": "electron-react-boilerplate",
+  "name": "electron-montecarlo-pi",
   "description": "A foundation for scalable desktop apps",
   "keywords": [
     "electron",
@@ -12,13 +12,13 @@
     "hot",
     "reload"
   ],
-  "homepage": "https://github.com/electron-react-boilerplate/electron-react-boilerplate#readme",
+  "homepage": "https://github.com/karlorz/electron-montecarlo-pi#readme",
   "bugs": {
-    "url": "https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues"
+    "url": "https://github.com/karlorz/electron-montecarlo-pi/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron-react-boilerplate/electron-react-boilerplate.git"
+    "url": "git+https://github.com/karlorz/electron-montecarlo-pi.git"
   },
   "license": "MIT",
   "author": {
@@ -175,8 +175,8 @@
     "webpack-merge": "^5.9.0"
   },
   "build": {
-    "productName": "ElectronReact",
-    "appId": "org.erb.ElectronReact",
+    "productName": "montecarlo-pi",
+    "appId": "org.erb.montecarlo-pi",
     "asar": true,
     "asarUnpack": "**\\*.{node,dll}",
     "files": [
@@ -235,16 +235,12 @@
     ],
     "publish": {
       "provider": "github",
-      "owner": "electron-react-boilerplate",
-      "repo": "electron-react-boilerplate"
+      "owner": "karlorz",
+      "repo": "karlorz/electron-montecarlo-pi"
     }
   },
   "collective": {
     "url": "https://opencollective.com/electron-react-boilerplate-594"
-  },
-  "devEngines": {
-    "node": ">=14.x",
-    "npm": ">=7.x"
   },
   "electronmon": {
     "patterns": [
