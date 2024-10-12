@@ -2,7 +2,7 @@
  * @NOTE: Prepend a `~` to css file paths that are in your node_modules
  *        See https://github.com/webpack-contrib/sass-loader#imports
  */
-body {
+ body {
   position: relative;
   color: white;
   height: 100vh;
@@ -13,12 +13,12 @@ body {
     #7a2c9e 129.35%
   );
   font-family: sans-serif;
-  overflow-y: hidden;
+  overflow: hidden; /* Prevent body from scrolling */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
-
 button {
   background-color: white;
   padding: 10px 20px;
@@ -31,32 +31,69 @@ button {
   transition: all ease-in 0.1s;
   cursor: pointer;
   opacity: 0.9;
+  margin-top: 5px; /* Reduce margin to make gap smaller */
 }
-
 button:hover {
   transform: scale(1.05);
   opacity: 1;
 }
-
 li {
   list-style: none;
 }
-
 a {
   text-decoration: none;
   height: fit-content;
   width: fit-content;
   margin: 10px;
 }
-
 a:hover {
   opacity: 1;
   text-decoration: none;
 }
-
 .Hello {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
+}
+.container {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90vw;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent the container from scrolling */
+  color: black; /* Set text color to black */
+}
+h1, h2, h3, h4, h5, h6 {
+  color: black; /* Set heading text color to black */
+  margin-bottom: 5px; /* Reduce margin to make gap smaller */
+}
+.form-group {
+  margin-bottom: 10px; /* Reduce margin to make gap smaller */
+}
+label {
+  display: block;
+  margin-bottom: 3px; /* Reduce margin to make gap smaller */
+  color: black; /* Set label text color to black */
+}
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 5px; /* Reduce margin to make gap smaller */
+}
+#input-section {
+  flex: 0 0 200px; /* Static height for the input section */
+}
+#results-section {
+  flex: 1; /* Variable height for the results section */
+  margin-top: 10px; /* Reduce margin to make gap smaller */
+  text-align: left;
+  color: black; /* Set text color to black */
+  overflow-y: auto; /* Make the results section scrollable if content overflows */
 }
