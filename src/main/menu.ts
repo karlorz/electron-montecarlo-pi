@@ -18,7 +18,7 @@ export default class MenuBuilder {
     this.mainWindow = mainWindow;
   }
 
-  buildMenu(): Menu {
+  buildMenu(): Menu | null {
     if (
       process.env.NODE_ENV === 'development' ||
       process.env.DEBUG_PROD === 'true'
@@ -26,15 +26,16 @@ export default class MenuBuilder {
       this.setupDevelopmentEnvironment();
     }
 
-    const template =
-      process.platform === 'darwin'
-        ? this.buildDarwinTemplate()
-        : this.buildDefaultTemplate();
+    // const template =
+    //   process.platform === 'darwin'
+    //     ? this.buildDarwinTemplate()
+    //     : this.buildDefaultTemplate();
 
-    const menu = Menu.buildFromTemplate(template);
-    Menu.setApplicationMenu(menu);
+    // const menu = Menu.buildFromTemplate(template);
+    // Menu.setApplicationMenu(menu);
 
-    return menu;
+    // return menu;
+    return null;
   }
 
   setupDevelopmentEnvironment(): void {
