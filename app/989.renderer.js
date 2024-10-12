@@ -1,0 +1,2 @@
+!function(e,o){if("object"==typeof exports&&"object"==typeof module)module.exports=o();else if("function"==typeof define&&define.amd)define([],o);else{var t=o();for(var s in t)("object"==typeof exports?exports:e)[s]=t[s]}}(self,(()=>(()=>{"use strict";return globalThis.onmessage=function(e){const{iters:o}=e.data;let t=0;for(let e=0;e<o;e+=1){const e=Math.random(),o=Math.random();e*e+o*o<=1&&(t+=1)}globalThis.postMessage(t)},{}})()));
+//# sourceMappingURL=989.renderer.js.map
